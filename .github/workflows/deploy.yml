@@ -1,0 +1,17 @@
+name: ci-cd
+
+on: 
+  push: 
+    branches: 
+      - 'main' 
+    pull_request: 
+      branches:
+      - 'main'
+
+jobs:
+  cd:
+    runs-on: ubuntu-latest 
+
+    steps: 
+      - name: cicd step
+        run: echo "todoapp"
